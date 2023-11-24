@@ -12,6 +12,7 @@ This homework requires you to think about the computational complexity of proble
 For this assignment, you should
 - read and write formal notation
 - recall the definition of P and NP
+- recall the definition of conjunctive normal form
 - recall the definition of satisfiability
 - prove that a language is in P or NP
 - argue about proof techniques
