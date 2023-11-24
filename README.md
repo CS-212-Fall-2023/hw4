@@ -1,11 +1,11 @@
-# Homework 4: Complexity and Reducibility
+# Homework 4: Time Complexity
 # CS 212 Nature of Computation, Fall 2023
 
 ---
 
 # Purpose
 
-This homework includes problems on computational complexity and reducibility of problems.
+This homework requires you to think about the computational complexity of problems.
 
 # Background
 
