@@ -1,0 +1,55 @@
+\documentclass[addpoints,a4paper]{exam}
+\usepackage{amsmath}
+\usepackage[a4paper]{geometry}
+\usepackage{hyperref}
+\usepackage{mdframed}
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS 212}{HW 4: Complexity and Reducibility}{Fall 2023}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+\boxedpoints
+
+\title{Homework 4: Complexity and Reducibility}
+\author{CS 212 Nature of Computation\\Habib University}
+\date{Fall 2023}
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+  
+
+\question
+  \begin{parts}
+  \part Show that the language, $ALL_{DFA} =\{ A \mid A \text{ is a DFA and } L(A)= \Sigma^*\}$, is in P.
+  \part Argue why the following is a valid or invalid approach to show that $ALL_{NFA}\in$ P.
+    \begin{mdframed}
+    On input $N$ (where $N$ is an NFA),
+    \begin{enumerate}
+    \item Convert $N$ to a DFA, $D$, using the conversion algorithm studied in the course.
+    \item If the polynomial time decider for $ALL_{DFA}$ accepts $D$, \textit{accept}; else \textit{reject}.
+    \end{enumerate}
+  \end{mdframed}
+\end{parts}
+
+
+\question Show that the class NP is closed under concatenation.
+
+        \question Define a \textit{coding} $\kappa$ to be a mapping,  $\kappa:\Sigma^*\rightarrow \Sigma^*$ (not necessarily one-to-one). For some string $x = x_1x_2\cdots x_n\in\Sigma^*$, we define $\kappa(x) = \kappa(x_1)\kappa(x_2)\cdots\kappa(x_n)$ and for a language $L\subseteq \Sigma^*$, we define $\kappa(L) = \{\kappa(x): x\in L \}$. Show that the class NP is closed under \textit{codings}. 
+
+
+\question Show that 2SAT $\in$  P, where 2SAT $ = \{ \phi \mid \phi \text{ is a satisfiable 2cnf-formula}\}$. You must give a high level description of the algorithm, and show that it runs in polynomial time. \\ \textit{Hint}: A disjunctive clause $(x_1 \vee x_2) \text{ is logically equivalent to } \neg x_1 \implies x_2 \text{ and } \neg x_2 \implies x_1$.
+
+\end{questions}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
